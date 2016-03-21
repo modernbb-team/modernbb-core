@@ -34,3 +34,14 @@ We highly recommend using a SSL certificate with ModernBB. Any certificate will 
 
 ### Troubleshooting
 If you are having issues with ModernBB, please check the [documentation](https://docs.modernbb.co) and [knowledge base](https://kb.modernbb.co) to see if your problem is listed and/or solved.
+
+### License
+ModernBB is licensed under the GNU General Public License Version 3 license - [View here](https://github.com/modernbb-team/modernbb-core/license)
+
+This essentially means the following:
+- You may copy, distribute, and modify our work
+- You may sell your modifications
+- You are **required** to include this same license in your distributions
+- You must provide the source code of your modifications
+- You must state the changes you have made from the original
+- You may not hold the original authors (us) liable for any damages
