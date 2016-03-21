@@ -12,8 +12,8 @@ To install ModernBB on your server, please make sure your server meets the requi
 First, clone this repository to your webroot directory:
 ```
 cd /var/www
-git clone https://github.com/modernbb-team/core.git
-mv core modernbb
+git clone https://github.com/modernbb-team/modernbb-core.git
+mv modernbb-core modernbb
 ```
 
 Then run the command to generate a new key for hashing and encryption:
