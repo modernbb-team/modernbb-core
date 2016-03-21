@@ -1,25 +1,36 @@
-## Laravel PHP Framework
+# ModernBB
+A refreshing and modern alternative to public forums and bulletin boards.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### Requirements
+ModernBB was developed with [Laravel 4.2](https://laravel.com), so your server must have:
+- PHP >= 5.4
+- PHP MCrypt Extension ([How to install mcrypt on Ubuntu](http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/))
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+### Installation
+To install ModernBB on your server, please make sure your server meets the requirements above.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+First, clone this repository to your webroot directory:
+```
+cd /var/www
+git clone https://github.com/modernbb-team/core.git
+mv core modernbb
+```
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Then run the command to generate a new key for hashing and encryption:
+```
+cd /var/www/modernbb
+php artisan key:generate
+```
 
-## Official Documentation
+ModernBB is now installed!
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+### Configuration
+After you install ModernBB, you must configure it for use.
 
-### Contributing To Laravel
+Navigate to your domain where you setup ModernBB, and a configuration screen should appear. Follow the instructions through each step to fully configure your installation.
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+### Secure Socket Layer (SSL) Support
+We highly recommend using a SSL certificate with ModernBB. Any certificate will do, but we recommend using one from a trusted certificate authority such as [Comodo](https://ssl.comodo.com/) or [Let's Encrypt](https://letsencrypt.org/).
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### Troubleshooting
+If you are having issues with ModernBB, please check the [documentation](https://docs.modernbb.co) and [knowledge base](https://kb.modernbb.co) to see if your problem is listed and/or solved.
